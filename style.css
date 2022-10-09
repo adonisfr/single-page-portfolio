@@ -136,7 +136,7 @@ header p{
 
 .about {
     display: flex;
-    margin: 100px 20px;
+    margin: 70px 20px;
     align-items: center;
     flex-direction: column;
 }
@@ -367,6 +367,10 @@ footer{
         background-color: #755CDE;
     }
 
+    nav{
+        padding-top: 34px;
+    }
+
     header{
       margin-bottom: 50px;
     }
@@ -389,7 +393,7 @@ footer{
 
     .about {
         gap: 80px;
-        margin: 160px auto;
+        margin: 80px auto;
         padding-left: 20px;
         padding-right: 20px;
     }
