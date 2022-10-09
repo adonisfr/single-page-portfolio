@@ -1,0 +1,452 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #FFF7F0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 48px;
+}
+
+.logo img{
+    height: 48px;
+    width: 48px;
+}
+
+.logo img:hover{
+    cursor: pointer;
+}
+
+.btn{
+    color: #FFF7F0;
+    height: 44px;
+    width: 176px;
+    border-radius: 50px;
+    font-size: 14px;
+    line-height: 28px;
+    background-color: #030303;
+    border: 0px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #755CDE;
+}
+
+header{
+    padding: 20px;
+}
+
+header h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+}
+
+header p{
+  font-size: 16px;
+  color: #7A746E;
+  line-height: 26px;
+  text-align: center;
+  margin: 15px 35px 15px 35px;
+}
+
+.services{
+    display: grid;
+    height: 1164px;
+    margin: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    'gd gd gd gd gd gd'
+    'gd gd gd gd gd gd'
+    'ui ui ui app app app'
+    'ilustration ilustration ilustration ilustration ilustration ilustration'
+    'photography photography photography photography photography photography'
+    'mg mg mg mg mg mg'
+    ;
+    gap: 20px;
+}
+
+.services div{
+    position: relative;
+    padding: 20px;
+}
+
+.services div h2{
+    position: absolute;
+    bottom: 20px;
+    font-style: normal;
+    font-size: 24px ;
+    font-weight: bold;
+    line-height: 30px;
+    color: white;
+}
+
+.services div img{
+    position: absolute;
+    right: 20px;
+}
+
+.service-item-gd{
+    grid-area: gd;
+    background-color: #755CDE;
+    border-radius: 8px;
+    
+}
+
+.service-item-ui{
+    grid-area: ui;
+    background-color: #F6A560;
+    border-radius: 8px;
+}
+
+.service-item-app{
+    grid-area: app;
+    background-color: #F39E9E;
+    border-radius: 8px;
+}
+
+.service-item-ilustration{
+    grid-area: ilustration;
+    background-color: #EB7565;
+    border-radius: 8px;
+}
+
+.service-item-photography{
+    grid-area: photography;
+    background-color: #61C4B7;
+    border-radius: 8px;
+}
+
+.service-item-mg{
+    grid-area: mg;
+    background-color: #552049;
+    border-radius: 8px;
+}
+
+.about {
+    display: flex;
+    margin: 100px 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about img{
+    height: 300px;
+    width: 300px;
+    margin-bottom: 30px;
+    
+}
+
+.about-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-info h2{
+    font-style: normal;
+    font-size: 26px;
+    color: #030303;
+    font-weight: bold;
+    line-height: 33px;
+    text-align: center;
+}
+
+.about-info p{
+    font-style: normal;
+    font-size: 16px;
+    color: #7A746E;
+    line-height: 26px;
+    text-align: center;
+}
+
+.about-info button{
+    background-color: #EB7565;
+}
+
+.about-info button:hover{
+    background-color: #F6A560;
+}
+
+
+.work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.work h2{
+    font-style: normal;
+    font-size: 24px;
+    line-height: 30px;
+    color: #030303;
+}
+
+.work button{
+    height: 64px;
+    width: 64px;
+    margin: 0px 6px;
+    background-color: #030303;
+    border-radius: 50px;
+    border: 0px;
+}
+
+.work button:hover{
+    cursor: pointer;
+    background-color: #755CDE;
+}
+
+.work .img-slide{
+    display: inline-flex;
+    column-gap: 15px;
+    width: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.img-slide img{
+    height: 180px;
+    width: 270px;
+    border-radius: 10px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 20px;
+    padding: 22px;
+    background-color: #030303;
+    height: 352px;
+    gap: 30px;
+    border-radius: 10px;
+}
+
+.contact h2{
+    font-style: normal;
+    font-size: 26px;
+    line-height: 33px;
+    font-weight: bold;
+    color: #FFF7F0;
+    text-align: center;
+}
+
+.contact p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFF7F0;
+}
+
+.contact button{
+    background-color: #EB7565;
+}
+
+.contact button:hover{
+    background-color: #F6A560;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    height: 48px;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .logo img{
+        height: 64px;
+        width: 64px;
+    }
+
+    .btn{
+        height: 56px;
+        width: 228px;
+        font-size: 16px;
+    }
+
+    nav{
+        height: 64px;
+    }
+
+    header h1{
+        font-size: 44px;
+        line-height: 55px;
+        text-align: center;
+    }
+    
+    header p{
+      font-size: 18px;
+      line-height: 28px;
+    }
+   
+    .services{
+        height: 570px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        'gd gd ui app'
+        'gd gd ilustration ilustration'
+        'photography photography mg mg'
+        ;
+        gap: 20px;
+    }
+
+    .about {
+        flex-direction: row;
+        gap: 60px;
+        margin-left: -44px;
+        padding-right: 25px;
+    }
+    
+    .about img{
+        height: 364px;
+        width: 364px;
+    }
+
+    .about-info{
+        align-items: flex-start;
+    }
+    
+    .about-info h2{
+        font-size: 32px;
+        line-height: 40px;
+        text-align: left;
+    }
+    
+    .about-info p{
+        font-size: 18px;
+        line-height: 28px;
+        text-align: left;
+    }
+
+    .work h2{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    .img-slide img{
+        height: 360px;
+        width: 540px;
+    }
+    
+    .contact h2{
+        font-size: 32px;
+        line-height: 42px;
+    }
+    
+    .contact p{
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+  }
+
+
+@media screen and (min-width: 992px) {
+
+    .btn:active{
+        background-color: #755CDE;
+    }
+
+    header{
+      margin-bottom: 50px;
+    }
+
+    header h1{
+        font-size: 56px;
+        line-height: 71px;
+    }
+   
+    .services{
+        height: 400px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        'gd gd ui app photography photography'
+        'gd gd ilustration ilustration mg mg'
+        ;
+        gap: 20px;
+    }
+
+    .about {
+        gap: 80px;
+        margin: 160px auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .about img{
+        height: 445px;
+        width: 445px;
+    }
+    
+    .about-info h2{
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .about-info button:active{
+        background-color: #F6A560;
+    }
+    
+    .img-slide img{
+        height: 360px;
+        width: 540px;
+    }
+    
+    .contact h2{
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+  }
+
+  @media screen and (min-width: 1281px) {
+     nav{
+        max-width: 1366px;
+        margin: 0px auto;
+     }
+
+     .services{
+        max-width: 1366px;
+        margin: 0px auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .about {
+        max-width: 1366px;
+    }
+
+    .contact{
+        max-width: 1366px;
+        margin: 80px auto;
+    }
+
+    footer{
+        max-width: 1396px;
+        margin: 0px auto;
+    }
+
+
+  }
+
