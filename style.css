@@ -224,16 +224,35 @@ header p{
 }
 
 .contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    height: 352px;
     margin: 80px 20px;
     padding: 22px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    'title title title'
+    'description description description'
+    'btn btn btn'
+    ;
     background-color: #030303;
-    height: 352px;
     gap: 30px;
     border-radius: 10px;
+    justify-items: center;
+}
+
+.contact-item-title{
+    grid-area: title;
+    margin: auto 0px;
+}
+
+.contact-item-description{
+    grid-area: description;
+}
+
+.contact-item-btn{
+    grid-area: btn;
+    
 }
 
 .contact h2{
@@ -372,6 +391,7 @@ footer{
     }
 
     header{
+        margin-top: 34px;
       margin-bottom: 50px;
     }
 
@@ -416,10 +436,35 @@ footer{
         height: 360px;
         width: 540px;
     }
+
+    .contact{
+        height: 320px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+        'title title btn'
+        'description description btn'
+        ;
+        padding-left: 50px;
+        gap: 10px;
+    }
     
     .contact h2{
         font-size: 40px;
         line-height: 50px;
+    }
+
+    .contact-item-title{
+        display: flex;
+        width: 100%;
+    }
+
+    .contact p{
+        text-align: start;
+    }
+
+    .contact button{
+        margin: auto 0px;
     }
 
   }
